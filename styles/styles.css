@@ -1,0 +1,494 @@
+a{
+  text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  color: greenyellow;
+  text-transform: none;
+  transition: 0.3s ease;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  font-size: 1.7rem;
+  align-items: center;
+}
+
+ul li {
+  text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  margin: 0 0.75em 0 0.75em; /* Separación entre el borde y el afuera de la caja. Es parte del espacio externo. */
+}
+
+ul:hover a {
+  color: #575757;
+}
+
+ul:hover a:hover {
+  color: #8EAAFB
+}
+
+/* Para el cuerpo del HTML */
+body {
+  font-family: 'Lora'; /* Define el tipo de Letra */
+  background: linear-gradient(rgba(28, 83, 2, 0.915), rgba(28, 83, 2, 0.915));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+}
+
+@media (max-width: 600px) {
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway';
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+  white-space: nowrap;
+ }
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+}
+
+.logo {
+  margin-left: 10.5%;
+  margin-right: 10.5%;
+}
+
+.site-heading {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  line-height: 7;
+  font-family: 'Raleway'; /* Define el tipo de letra */
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+  display: flex;
+  margin: left;
+  justify-content: center;
+}
+
+.site-heading .site-heading-upper {
+  display: block;
+  font-size: 2rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  display: inline;
+  text-align: center;
+}
+
+/* titulo Medio Pique */
+.site-heading .site-heading-lower {
+  font-size: 8rem; /* Define el tamaño de la letra */
+  font-weight: 100; /* Define si es negrita o normal de la letra */
+  line-height: 4rem;
+  display: inline;
+  text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+}
+
+@media (max-width: 992px) {
+  .site-heading {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    line-height: 7;
+    font-family: 'Raleway'; /* Define el tipo de letra */
+    text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+    display: flex;
+    margin: left;
+    justify-content: center;
+  }
+  
+  .site-heading .site-heading-lower {
+    font-size: 4.1rem;
+    line-height: 3rem;
+    display: row;
+    text-align: center;
+    white-space: nowrap;
+ }
+
+  .logo {
+    margin-left: 10.5%;
+    margin-right: 10.5%;
+  }
+}
+
+.page-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  padding-bottom: 0.5rem;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+}
+
+.section-heading .section-heading-under {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  text-transform: none;
+  font-weight: 300; /* Define si es negrita o normal de la letra */
+  margin-top:5rem;
+}
+
+.section-heading-pag {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.section-heading-pag .section-heading-upper-pag {
+  display: block;
+  font-size: 30rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+  padding-bottom: 0.5rem;
+}
+
+.section-heading-pag .section-heading-lower-pag {
+  display: block;
+  font-size: 4rem; /* Define el tamaño de la letra */
+  font-weight: 800; /* Define si es negrita o normal de la letra */
+}
+
+.section-heading-pag .section-heading-under-pag {
+  display: block;
+  font-size: 1rem; /* Define el tamaño de la letra */
+  text-transform: none;
+  font-weight: 300; /* Define si es negrita o normal de la letra */
+  margin-top:5rem;
+}
+
+@media (max-width: 992px){
+  .section-heading .section-heading-lower {
+    display: block;
+    font-size: 3.2rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+  }
+
+  .section-heading .section-heading-upper {
+    display: block;
+    font-size: 1.5rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+    padding-bottom: 0.5rem;
+  }
+
+  .section-heading .section-heading-under {
+    display: block;
+    font-size: 20rem; /* Define el tamaño de la letra */
+    text-transform: none;
+    font-weight: 300; /* Define si es negrita o normal de la letra */
+    margin-top:50rem;
+  }
+  
+  .section-heading-pag .section-heading-lower-pag {
+    display: block;
+    font-size: 3rem; /* Define el tamaño de la letra */
+    font-weight: 800; /* Define si es negrita o normal de la letra */
+  }
+
+  .section-heading-pag .section-heading-under-pag {
+    display: block;
+    font-size: 30rem; /* Define el tamaño de la letra */
+    text-transform: none;
+    font-weight: 300; /* Define si es negrita o normal de la letra */
+    margin-top:5rem;
+  }
+}
+
+.bg-faded {
+  background-color: rgba(161, 156, 156, 0.85); /* Define el color del fondo */
+}
+
+#mainNav {
+  background-color: rgba(82, 209, 0); /* Define el color del fondo */
+  font-family: 'Raleway';
+  width: 100%;
+  height: 8%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 1000; /* Define si es negrita o normal de la letra */
+  flex-direction: row;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(151, 252, 88);
+    text-decoration: underline; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+    display: inline;
+    flex-direction: row;
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #ffffff;
+    text-decoration: underline; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  }
+}
+
+@media (max-width: 992px) {
+  #mainNav {
+    font-family: 'Raleway';
+    width: 126.5%;
+    height: 8%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 400px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 1000; /* Define si es negrita o normal de la letra */
+    flex-direction: row;
+    font-size: 90%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+  width: 70%; /* ancho */
+  }
+}
+
+.btn-xl {
+  font-weight: 700; /* Define si es negrita o normal de la letra */
+  font-size: 0.8rem; /* Define el tamaño de la letra */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 250rem;
+  padding-right: 2rem;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.intro-pag {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 400px) {
+  .intro-img{
+   width: 60%;
+ }
+
+ .intro-text {
+  background-color: rgba(24, 64, 8);
+  color: cornsilk; /* Define el color del texto de abajo */
+ }
+
+ .intro-img-pag{
+  width: 45%;
+ }
+
+.intro-text-pag{
+ background-color: rgba(24, 64, 8);
+ color: cornsilk; /* Define el color del texto de abajo */
+ }
+}
+
+/* Para modificar la imagen */
+@media (max-width: 992px) {
+  .intro .intro-img {
+    width: 70%; /* ancho */
+    height: 100%;
+  }
+  .intro .intro-text {
+    margin-left: 10px;
+    background-color: rgba(24, 64, 8); /* Define el color del fondo */
+    color: cornsilk; /* Define el color del texto de abajo */
+    position: relative;
+    height: 300px; /* alto del recuadro verde el título y subtítulo */
+  }
+  .intro .intro-text .intro-button {
+    width: 100%; /* ancho */
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+  .intro-pag .intro-img-pag {
+    width: 65%; /* ancho */
+    height: 50%;
+  }
+  .intro-pag .intro-text-pag {
+    margin-left: 10px;
+    background-color: rgba(24, 64, 8); /* Define el color del fondo */
+    color: cornsilk; /* Define el color del texto de abajo */
+    position: relative;
+    height: 300px; /* alto del recuadro verde el título y subtítulo */
+  }
+  .intro-pag .intro-text-pag .intro-button-pag {
+    width: 100%; /* ancho */
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+/* Para modificar el texto del artículo */
+@media (min-width: 1200px) {
+  .intro .intro-text {
+  width: 70%; /* ancho */
+  }
+}
+
+.contada {
+  height: 600px;
+  background-color: rgb(242, 245, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contada .contada-inner {
+  width: 46%;
+  height: 24%;
+  font-size: 130%;
+  text-align: center;
+  position: relative;
+  padding: 4rem;
+  margin: 32rem; /* Separación entre el borde y el afuera de la caja. Es parte del espacio externo. */
+  background-color: rgb(1, 78, 9); /* Define el color del fondo */
+  color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contada .contada-innerv {
+  position: relative;
+  padding: -50rem; /* el espacio libre o “aire” que se deja entre el contenido y el borde de la caja. Es parte del espacio interno del elemento. */
+  margin: 0.5rem;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.85); /* Define el color del fondo */
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 400px) {
+  .contada {
+    height: 600px;
+    background-color: rgb(242, 245, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contada .contada-inner {
+    width: 49%;
+    height: 27%;
+    font-size: 130%;
+    text-align: center;
+    position: relative;
+    padding: 4.5rem;
+    margin: 32rem; /* Separación entre el borde y el afuera de la caja. Es parte del espacio externo. */
+    background-color: rgb(1, 78, 9); /* Define el color del fondo */
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contada .contada-innerv {
+    width: 50%;
+    position: relative;
+    padding: -50rem; /* el espacio libre o “aire” que se deja entre el contenido y el borde de la caja. Es parte del espacio interno del elemento. */
+    margin: 0.5rem;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.85); /* Define el color del fondo */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 0;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.footer {
+   background-color: rgba(4, 47, 0, 0.8); /* Define el color del fondo */
+   text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+   height: 30%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 150%;
+}
+
+@media (max-width: 992px) {
+  .footer {
+   background-color: rgba(4, 47, 0, 0.8); /* Define el color del fondo */
+   text-align: center; /* Define si va estar a la derecha, al medio, a la izquiera y justificado */
+   height: 20%;
+   width: 126.5%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 150%;
+  }
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 83, 20, 0.1);
+}
+
+
+.font-weight-light {
+  font-weight: 100 !important; /* Define si es negrita o normal de la letra */
+}
+
+a.link{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+a.link:hover{
+  text-decoration: none; /* Define si el texto va a estar subrayado (underline), si va estar subrayado por arriba (overline) o tachando el texto (line-through) */
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.section-content{
+  font-family: 'Lora' !important; /* Define el tipo de letra */
+  font-size: 16px !important; /* Define el tamaño de la letra */
+  font-weight: 400 !important; /* Define si es negrita o normal de la letra */
+  line-height: 28px !important;
+}
+
+ul.errorlist{
+  padding-top: .75rem;
+  font-style: italic; /* Define si es letra itálica o letra normal */
+  color: red;
+}
